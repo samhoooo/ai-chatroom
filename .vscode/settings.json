@@ -1,0 +1,14 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "eslint.workingDirectories": [
+    "apps/basket",
+    "apps/checkout",
+    "apps/dummy-store",
+    "apps/checkout",
+    "libs/basket",
+    "libs/checkout",
+    "libs/basketMfeLoader",
+    "libs/core"
+  ]
+}

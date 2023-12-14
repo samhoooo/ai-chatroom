@@ -1,8 +1,16 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
+window.HTMLElement.prototype.scrollIntoView = function () {};
+
+test("renders AI name", () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const aiName = screen.getByText(/AI Sam/i);
+  expect(aiName).toBeInTheDocument();
+});
+
+test("render AI greetings", () => {
+  render(<App />);
+  const aiGreetings = screen.getByText(/Hi, How are you today?/i);
+  expect(aiGreetings).toBeInTheDocument();
 });
