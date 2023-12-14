@@ -1,4 +1,13 @@
-# Getting Started with Create React App
+# React AI Chatroom
+
+A single page application allows text-based conversations with AI. 
+
+Powered by Microsoft DialoGPT-large (https://huggingface.co/microsoft/DialoGPT-large)
+
+
+![image](https://github.com/samhoooo/ai-chatroom/assets/19681625/6824701a-1f5e-4d3d-b673-9d5e0415af3b)
+
+You can modify your API logic in ai-chatroom/src/App.js 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
