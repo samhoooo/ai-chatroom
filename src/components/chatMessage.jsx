@@ -19,7 +19,7 @@ const ChatMessage = (props) => {
       </div>
       {side === "right" && (
         <Grid item xs={1}>
-          <Avatar src={avatar} />
+          <Avatar src={""} />
         </Grid>
       )}
     </Grid>

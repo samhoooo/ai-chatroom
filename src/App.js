@@ -84,10 +84,14 @@ function App() {
           <Container>
             <Grid container spacing={2} alignItems="center">
               <Grid item xs={0}>
-                <Avatar alt="Sam" src="/static/images/avatar/1.jpg" />
+                <Avatar alt="Sam" src="robot.png" />
               </Grid>
               <Grid item xs={10}>
-                <b>AI Sam</b>
+                <b>
+                  <a href="https://medium.com/@samho1996">
+                    Chatbot Demo By Sam Ho
+                  </a>
+                </b>
               </Grid>
             </Grid>
           </Container>
@@ -95,13 +99,13 @@ function App() {
             <div ref={chatArea}>
               {messages.map((message) => (
                 <ChatMessage
-                  avatar={""}
+                  avatar={"robot.png"}
                   side={message.from === "gpt" ? "left" : "right"}
                   message={message}
                   key={message.id}
                 />
               ))}
-              {gptLoading && <Typing />}
+              {gptLoading && <Typing avatar={"robot.png"} />}
             </div>
           </div>
 
